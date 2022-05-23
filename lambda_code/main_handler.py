@@ -11,11 +11,11 @@ client = boto3.client('ec2')
 
 # List of AWS Accounts ID's
 PROD = os.environ.get('PROD')
-DEV = os.environ.get('DEV')
+QA = os.environ.get('QA')
 
 AccountList = [
     PROD,
-    DEV
+    QA
 ]
 
 def lambda_handler(event, context):
